@@ -1,7 +1,14 @@
-
 var reload_a_events = function() {
 	$('a.hash').unbind('click', link_event);
 	$('a.hash').bind('click', link_event);
+}
+
+var set_ajax_links = function() {
+	$.ajaxSetup ({
+		cache: false
+	});
+
+	$('a.hash').click(link_event);
 }
 
 var set_active_link = function(link) {

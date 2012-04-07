@@ -42,14 +42,6 @@ var set_pre_events = function() {
 	});
 }
 
-var set_ajax_links = function() {
-	$.ajaxSetup ({
-		cache: false
-	});
-
-	$('a.hash').click(link_event);
-}
-
 var set_categories_more = function() {
 	if($('#more-categories')) {
 		$('#more-categories').click(function() {
