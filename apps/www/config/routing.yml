@@ -1,0 +1,59 @@
+homepage:
+  url:   /
+  param: { module: page, action: index, page: 1 }
+
+homepage_page:
+  url:   /page/:page
+  param: { module: page, action: index, page: 1 }
+
+contact:
+  url: /contact/:sent
+  param: { module: page, action: contact, sent: 0 }
+
+post:
+  url: /post/:id/:slugy_path/:sent
+  param: { module: page, action: post, sent: 0 }
+
+share_post:
+  url: /share/:id/:slugy_path/:sent
+  param: { module: page, action: sharePost, sent: 0 }
+
+category:
+  url: /categorie/:id/:slugy_path/:page
+  param: { module: page, action: category, page: 1 }
+
+tag:
+  url: /tag/:tag/:page
+  param: { module: page, action: tag }
+
+rss:
+  url: /RSS
+  param: { module: rss, action: index }
+
+rss_category:
+  url: /RSS/c/:id
+  param: { module: rss, action: category }
+
+rss_post:
+  url: /RSS/p/:id
+  param: { module: rss, action: post }
+
+search:
+  url: /chercher
+  param: { module: page, action: search }
+
+profile:
+  url: /profil/:username
+  param: { module: page, action: profile }
+
+account:
+  url: /mon-compte/:sent
+  param: { module: page, action: account, sent: 0 }
+
+auth:
+  url: /auth/:logout
+  param: { module: page, action: auth, logout: false }
+
+bot:
+  url: /bot
+  param: { module: page, action: bot }

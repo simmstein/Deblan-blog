@@ -1,0 +1,7 @@
+all:
+  default_culture:     fr
+  source:              XLIFF
+  debug:               false
+  cache:               true
+  untranslated_prefix: "[T]"
+  untranslated_suffix: "[/T]"

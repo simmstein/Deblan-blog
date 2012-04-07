@@ -1,0 +1,3 @@
+all:
+  sfAssetsLibrary:
+    upload_dir:  media

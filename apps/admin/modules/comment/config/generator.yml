@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           comment
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              comment
+    plural:                comments
+    route_prefix:          comment
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [id, =author, created_at]
+      filter:
+        class: FALSE
+      form:
+        display: [post_id, parent_comment_id, author, website, email, avatar, content] 
+      edit:    ~
+      new:     ~

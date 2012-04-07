@@ -1,0 +1,17 @@
+# Project files
+/cache/*
+/log/*
+_/web/*_dev.php
+/web/uploads/*
+/web/medias/*
+*.swp
+
+# SCM files
+.arch-params
+.bzr
+_darcs
+.git
+.hg
+.monotone
+.svn
+CVS

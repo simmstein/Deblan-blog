@@ -1,0 +1,104 @@
+<database name="propel" defaultIdMethod="native" package="lib.model">
+	<table skipSql="false" abstract="false" name="sf_guard_user_profile" phpName="sfGuardUserProfile">
+		<column name="user_id" type="integer" primaryKey="true" required="true"/>
+		<column name="firstname" type="varchar" size="25" />
+		<column name="lastname" type="varchar" size="25" />
+		<column name="email" type="varchar" size="100" />
+		<column name="avatar" type="varchar" size="128" />
+		<column name="twitter" type="varchar" size="128" />
+		<column name="facebook" type="varchar" size="128" />
+		<column name="linkedin" type="varchar" size="128" />
+		<column name="blog" type="varchar" size="128" />
+		<column name="website" type="varchar" size="128" />
+		<column name="description" type="LONGVARCHAR"/>
+		<foreign-key onUpdate="none" foreignTable="sf_guard_user" onDelete="cascade">
+			<reference local="user_id" foreign="id"/>
+		</foreign-key>
+	</table>
+
+	<table name="bot">
+		<column name="id" type="INTEGER" primaryKey="true" autoincrement="true" required="true"/>
+		<column name="ip" type="varchar" size="128" />
+		<column name="url" type="varchar" size="255" />
+		<column name="trace" type="LONGVARCHAR"   />
+		<column name="created_at" type="TIMESTAMP"/>
+	</table>
+
+	<table name="post">
+    <column name="id" type="INTEGER" primaryKey="true" autoincrement="true" required="true"/>
+    <column name="title" type="VARCHAR" size="255" required="true"/>
+    <column name="content" type="LONGVARCHAR"/>
+    <column name="tags" type="VARCHAR" size="255"/>
+    <column name="picture" type="VARCHAR" size="255"/>
+    <column name="created_at" type="TIMESTAMP"/>
+    <column name="updated_at" type="TIMESTAMP"/>
+    <column name="published_at" type="TIMESTAMP"/>
+    <column name="user_id" type="INTEGER"/>
+		<column name="is_active" type="boolean" />
+    <foreign-key foreignTable="sf_guard_user" onDelete="none" onUpdate="cascade">
+      <reference local="user_id" foreign="id"/>
+    </foreign-key>
+  </table>
+
+	<table name="tag" phpName="Tag">
+		<column name="id" type="integer" primaryKey="true" autoincrement="true" required="true" />
+		<column name="name" type="varchar" size="255" required="true" />
+	</table>
+
+	<table name="post_has_tag" phpName="PostHasTag">
+    <column name="post_id" type="INTEGER" primaryKey="true" required="true"/>
+    <column name="tag_id" type="INTEGER" primaryKey="true" required="true"/>
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id"/>
+    </foreign-key>
+    <foreign-key foreignTable="tag" onDelete="cascade" onUpdate="cascade">
+      <reference local="tag_id" foreign="id"/>
+    </foreign-key>
+	</table>
+
+  <table name="category" phpName="Category">
+    <column name="id" type="INTEGER" primaryKey="true" autoincrement="true" required="true"/>
+    <column name="name" type="VARCHAR" size="255" required="true"/>
+    <column name="rank" type="INTEGER"/>
+		<column name="is_active" type="boolean" />
+  </table>
+
+  <table name="post_has_category" phpName="PostHasCategory">
+    <column name="post_id" type="INTEGER" primaryKey="true" required="true"/>
+    <column name="category_id" type="INTEGER" primaryKey="true" required="true"/>
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id"/>
+    </foreign-key>
+    <foreign-key foreignTable="category" onDelete="cascade" onUpdate="cascade">
+      <reference local="category_id" foreign="id"/>
+    </foreign-key>
+  </table>
+
+  <table name="link" phpName="Link">
+    <column name="id" type="INTEGER" primaryKey="true" autoincrement="true" required="true"/>
+    <column name="name" type="VARCHAR" size="255" required="true"/>
+    <column name="url" type="VARCHAR" size="255" required="true"/>
+		<column name="description" type="VARCHAR" size="255" />
+    <column name="rank" type="INTEGER"/>
+  </table>
+
+  <table name="comment" phpName="Comment">
+    <column name="id" type="INTEGER" primaryKey="true" autoincrement="true" required="true"/>
+    <column name="post_id" type="INTEGER" required="true"/>
+    <column name="parent_comment_id" type="INTEGER"/>
+    <column name="author" type="VARCHAR" size="255"  required="true"/>
+    <column name="website" type="VARCHAR" size="255"/>
+    <column name="email" type="VARCHAR" size="255" required="true" />
+    <column name="content" type="LONGVARCHAR"  required="true"/>
+		<column name="avatar" type="VARCHAR" size="128" />
+		<column name="ip" type="VARCHAR" size="255" />
+    <column name="created_at" type="TIMESTAMP" />
+    <column name="updated_at" type="TIMESTAMP" />
+    <foreign-key foreignTable="post" onDelete="cascade" onUpdate="cascade">
+      <reference local="post_id" foreign="id"/>
+    </foreign-key>
+    <foreign-key foreignTable="comment" onDelete="none" onUpdate="cascade">
+      <reference local="parent_comment_id" foreign="id"/>
+    </foreign-key>
+  </table>
+</database>

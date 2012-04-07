@@ -1,0 +1,53 @@
+<?php
+
+/*
+ * This file is part of the symfony package.
+ * (c) 2004-2006 Fabien Potencier <fabien.potencier@symfony-project.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ *
+ * @package    symfony
+ * @subpackage plugin
+ * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
+ * @version    SVN: $Id: sfGuardUser.php 7634 2008-02-27 18:01:40Z fabien $
+ */
+class sfGuardUser extends PluginsfGuardUser
+{
+	public function hasPermission($names, $validall=false)
+	{
+		if(empty($names)) {
+			return true;
+		}
+
+		if (!$this->allPermissions)
+		{
+			$this->getAllPermissions();
+		}
+
+		if(!is_array($names)) {
+			$names = array($names);
+		}
+
+		$valid = false;
+		$validall_check = true;
+
+		foreach($names as $p) {
+			if(isset($this->allPermissions[$p])) {
+				$valid = true;
+			}
+			else {
+				$validall_check = false;
+			}
+		}
+		
+		if($validall) {
+			return $valid && $validall_check;
+		}
+			
+		return $valid;
+	}
+}

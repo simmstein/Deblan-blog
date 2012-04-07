@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Administration du blog
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [uniform.default.css, markitup.css, sets/style.css, dashboard/main.css]
+
+  javascripts:    [jquery/jquery.1.7.1.js, jquery/jquery.ui.js, jquery/jquery-ui-timepicker-addon.js, jquery/jquery.uniform.js, jquery/jquery.markitup.js, dashboard/main.js]
+
+  has_layout:     true
+  layout:         layout

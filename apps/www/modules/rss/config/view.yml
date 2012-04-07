@@ -1,0 +1,6 @@
+all:
+    has_layout: false
+    template:   index
+
+    http_metas:
+      content-type: text/xml

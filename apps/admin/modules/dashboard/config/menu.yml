@@ -1,0 +1,58 @@
+Contenus:
+  items:
+    item1:
+      title: Tableau de bord
+      permissions: [Administrer, Rédaction]
+      route: @homepage
+
+    item2:
+      title: Articles
+      permissions: [Administrer, Rédaction]
+      route: @post
+    
+    item3:
+      title: Categories
+      permissions: [Administrer, Rédaction]
+      route: @category
+
+    item4:
+      title: Commentaires
+      permissions: [Administrer, Rédaction]
+      route: @comment
+
+    item5:
+      title: Liens
+      permissions: [Administrer, Rédaction]
+      route: @link
+
+    item6:
+      title: Médiathèque
+      permissions: [Administrer, Rédaction]
+      route: @sf_asset_library_root
+
+Administrer:
+  items:
+    item1:
+      title: Utilisateurs
+      permissions: [Administrer]
+      route: @sf_guard_user
+
+    item2:
+      title: Groupes
+      permissions: [Administrer]
+      route: @sf_guard_group
+
+    item3:
+      title: Permissions
+      permissions: [Administrer]
+      route: @sf_guard_permission
+
+    item4:
+      title: Vider le cache
+      permissions: [Administrer]
+      route: @clearcache
+
+    item5:
+      title: Bot
+      permissions: [Administrer]
+      route: @bot    

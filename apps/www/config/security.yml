@@ -1,0 +1,25 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure: false
+
+all:
+  .settings:
+    csrf_secret:            ed94f287651502cbc61b821bf3e48829b10ae5f3
+
+    escaping_strategy:      false
+    escaping_method:        ESC_SPECIALCHARS
+
+    use_database:           true
+
+    i18n:                   true
+    default_culture:        fr
+    standard_helpers:       [Partial, Cache, I18N]
+    enabled_modules:        [default, sfGuardAuth, sfGuardGroup, sfGuardPermission, sfGuardUser]
+
+  .actions:
+    login_module:           sfGuardAuth
+    login_action:           signin
+    secure_module:          sfGuardAuth
+    secure_action:          secure 

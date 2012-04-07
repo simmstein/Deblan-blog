@@ -1,0 +1,273 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+	<file orginal="global" source-language="en_US" datatype="plaintext">
+		<body>
+			<trans-unit>
+				<source>Username</source>
+				<target>Nom d'utilisateur</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Password</source>
+				<target>Mot de passe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remember</source>
+				<target>Restez connecté</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>sign in</source>
+				<target>Connexion</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Titre</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Content</source>
+				<target>Contenu</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Created at</source>
+				<target>Créé le</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Updated at</source>
+				<target>Mis à jour le</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Published at</source>
+				<target>Publié le</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User</source>
+				<target>Utilisateur</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Picture</source>
+				<target>Illustration</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>is empty</source>
+				<target>vide</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Nom</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rang</source>
+				<target>Rang</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Post has category list</source>
+				<target>Appartient à</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Required.</source>
+				<target>Obligatoire</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Category</source>
+				<target>Modifier une catégorie</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Post</source>
+				<target>Modifier un article</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Comment</source>
+				<target>Modifier un commentaire</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Category</source>
+				<target>Nouvelle catégorie</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Post</source>
+				<target>Nouvel article</target>
+			</trans-unit>			
+
+			<trans-unit>
+				<source>New Comment</source>
+				<target>Nouveau commentaire</target>
+			</trans-unit>			
+
+			<trans-unit>
+				<source>Category List</source>
+				<target>Liste des catégories</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Post List</source>
+				<target>Liste des articles</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment List</source>
+				<target>Liste des commentaires</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Post</source>
+				<target>Article</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Parent comment</source>
+				<target>Réponse au commentaire</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Author</source>
+				<target>Auteur</target>
+			</trans-unit>		
+
+			<trans-unit>
+				<source>Email</source>
+				<target>Email</target>
+			</trans-unit>			
+
+			<trans-unit>
+				<source>Website</source>
+				<target>Site web</target>
+			</trans-unit>						
+
+			<trans-unit>
+				<source>Last login</source>
+				<target>Dernière connexion</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Password (again)</source>
+				<target>Mot de passe (encore)</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Permissions and groups</source>
+				<target>Permissions et groupes</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Is active</source>
+				<target>Actif</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Is super admin</source>
+				<target>Super administrateur</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Groups</source>
+				<target>Groupes</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Group list</source>
+				<target>Liste des groupes</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Permission list</source>
+				<target>Liste des permissions</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The two passwords must be the same.</source>
+				<target>Les deux mots de passe doivent être identiques</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User list</source>
+				<target>Liste des utilisateurs</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Group</source>
+				<target>Modification d'un groupe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Group</source>
+				<target>Nouveau groupe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Permission</source>
+				<target>Modification d'une permission</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Permission</source>
+				<target>Nouvelle permission</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit User</source>
+				<target>Modification d'un utilisateur</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New User</source>
+				<target>Nouvel utilisateur</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject</source>
+				<target>Sujet</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Invalid.</source>
+				<target>La donnée saisie n'est pas correcte</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Password again</source>
+				<target>Mot de passe (encore)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Firstname</source>
+				<target>Prénom</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Lastname</source>
+				<target>Nom</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>remove the current file</source>
+				<target>Supprimer le fichier</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

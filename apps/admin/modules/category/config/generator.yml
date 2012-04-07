@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           category
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              category
+    plural:                categorys
+    route_prefix:          category
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [id, =name, is_active]
+      filter:  
+        class: FALSE
+      form:
+        display: [name, is_active]
+      edit:    ~
+      new:     ~
