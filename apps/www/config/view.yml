@@ -10,8 +10,8 @@ default:
     title:         Blog
     #description:  symfony project
     #keywords:     symfony, project
-    #language:     en
-    #robots:       index, follow
+    language:     fr
+    robots:       index, follow
 
   stylesheets:    [bootstrap.css, uniform.default.css, main.css]
 
