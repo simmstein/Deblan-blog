@@ -1943,3 +1943,107 @@ Apr 05 10:43:52 symfony [info] {sfWebDebugLogger} Factories 26.13 ms (1)
 Apr 05 10:43:52 symfony [info] {sfWebDebugLogger} Action "page/index" 20.26 ms (1)
 Apr 05 10:43:52 symfony [info] {sfWebDebugLogger} View "Success" for "page/index" 31.93 ms (1)
 Apr 05 10:43:52 symfony [info] {sfWebResponse} Send content (66244 o)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group" (/sf_guard_group.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_new" (/sf_guard_group/new.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_create" (/sf_guard_group.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_edit" (/sf_guard_group/:id/edit.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_update" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_delete" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_show" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_object" (/sf_guard_group/:id/:action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_collection" (/sf_guard_group/:action/action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission" (/sf_guard_permission.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_new" (/sf_guard_permission/new.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_create" (/sf_guard_permission.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_edit" (/sf_guard_permission/:id/edit.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_update" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_delete" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_show" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_object" (/sf_guard_permission/:id/:action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_collection" (/sf_guard_permission/:action/action.:sf_format)
+Apr 08 08:54:08 symfony [info] {sfPatternRouting} Match route "post" (/post/:id/:slugy_path/:sent) for /post/435/Tribler-un-autre-client-BitTorrent-plutot-interessant with parameters array (  'module' => 'page',  'action' => 'post',  'sent' => '0',  'id' => '435',  'slugy_path' => 'Tribler-un-autre-client-BitTorrent-plutot-interessant',)
+Apr 08 08:54:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 08 08:54:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 08 08:54:08 symfony [info] {pageActions} Call "pageActions->executePost()"
+Apr 08 08:54:08 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 08 08:54:08 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT post.ID, post.TITLE, post.CONTENT, post.TAGS, post.PICTURE, post.CREATED_AT, post.UPDATED_AT, post.PUBLISHED_AT, post.USER_ID, post.IS_ACTIVE FROM `post` WHERE post.ID='435'
+Apr 08 08:54:09 symfony [info] {sfPHPView} Render "/home/simon/public_html/www/repo/www.deblan.tv/Symfony/apps/mobile/modules/page/templates/postSuccess.php"
+Apr 08 08:54:09 symfony [info] {main} Call "page->executeShowPost()"
+Apr 08 08:54:09 symfony [info] {sfPartialView} Render "/home/simon/public_html/www/repo/www.deblan.tv/Symfony/apps/mobile/modules/page/templates/_showPost.php"
+Apr 08 08:54:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT sf_guard_user.ID, sf_guard_user.USERNAME, sf_guard_user.ALGORITHM, sf_guard_user.SALT, sf_guard_user.PASSWORD, sf_guard_user.CREATED_AT, sf_guard_user.LAST_LOGIN, sf_guard_user.IS_ACTIVE, sf_guard_user.IS_SUPER_ADMIN FROM `sf_guard_user` WHERE sf_guard_user.ID=1
+Apr 08 08:54:09 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT comment.ID, comment.POST_ID, comment.PARENT_COMMENT_ID, comment.AUTHOR, comment.WEBSITE, comment.EMAIL, comment.CONTENT, comment.AVATAR, comment.IP, comment.CREATED_AT, comment.UPDATED_AT FROM `comment` WHERE comment.POST_ID=435 ORDER BY comment.CREATED_AT ASC
+Apr 08 08:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 08 08:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (11)
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} Factories 209.30 ms (1)
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} Action "page/post" 111.42 ms (1)
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} View "Success" for "page/post" 49.82 ms (1)
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} Component "page/showPost" 0.01 ms (1)
+Apr 08 08:54:09 symfony [info] {sfWebDebugLogger} Partial "page/_showPost" 22.14 ms (1)
+Apr 08 08:54:09 symfony [info] {sfWebResponse} Send content (3420 o)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group" (/sf_guard_group.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_new" (/sf_guard_group/new.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_create" (/sf_guard_group.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_edit" (/sf_guard_group/:id/edit.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_update" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_delete" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_show" (/sf_guard_group/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_object" (/sf_guard_group/:id/:action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_collection" (/sf_guard_group/:action/action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission" (/sf_guard_permission.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_new" (/sf_guard_permission/new.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_create" (/sf_guard_permission.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_edit" (/sf_guard_permission/:id/edit.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_update" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_delete" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_show" (/sf_guard_permission/:id.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_object" (/sf_guard_permission/:id/:action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_collection" (/sf_guard_permission/:action/action.:sf_format)
+Apr 08 08:54:13 symfony [info] {sfPatternRouting} Match route "post" (/post/:id/:slugy_path/:sent) for /post/432/J-ai-besoin-de-dons with parameters array (  'module' => 'page',  'action' => 'post',  'sent' => '0',  'id' => '432',  'slugy_path' => 'J-ai-besoin-de-dons',)
+Apr 08 08:54:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 08 08:54:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 08 08:54:13 symfony [info] {pageActions} Call "pageActions->executePost()"
+Apr 08 08:54:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Apr 08 08:54:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT post.ID, post.TITLE, post.CONTENT, post.TAGS, post.PICTURE, post.CREATED_AT, post.UPDATED_AT, post.PUBLISHED_AT, post.USER_ID, post.IS_ACTIVE FROM `post` WHERE post.ID='432'
+Apr 08 08:54:13 symfony [info] {sfPHPView} Render "/home/simon/public_html/www/repo/www.deblan.tv/Symfony/apps/mobile/modules/page/templates/postSuccess.php"
+Apr 08 08:54:13 symfony [info] {main} Call "page->executeShowPost()"
+Apr 08 08:54:13 symfony [info] {sfPartialView} Render "/home/simon/public_html/www/repo/www.deblan.tv/Symfony/apps/mobile/modules/page/templates/_showPost.php"
+Apr 08 08:54:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.3 MB | memdelta:      0.0 B | SELECT sf_guard_user.ID, sf_guard_user.USERNAME, sf_guard_user.ALGORITHM, sf_guard_user.SALT, sf_guard_user.PASSWORD, sf_guard_user.CREATED_AT, sf_guard_user.LAST_LOGIN, sf_guard_user.IS_ACTIVE, sf_guard_user.IS_SUPER_ADMIN FROM `sf_guard_user` WHERE sf_guard_user.ID=1
+Apr 08 08:54:13 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT comment.ID, comment.POST_ID, comment.PARENT_COMMENT_ID, comment.AUTHOR, comment.WEBSITE, comment.EMAIL, comment.CONTENT, comment.AVATAR, comment.IP, comment.CREATED_AT, comment.UPDATED_AT FROM `comment` WHERE comment.POST_ID=432 ORDER BY comment.CREATED_AT ASC
+Apr 08 08:54:13 symfony [info] {main} Call "page->executeShowComment()"
+Apr 08 08:54:13 symfony [info] {sfPartialView} Render "/home/simon/public_html/www/repo/www.deblan.tv/Symfony/apps/mobile/modules/page/templates/_showComment.php"
+Apr 08 08:54:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 08 08:54:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (13)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Factories 23.52 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Action "page/post" 30.73 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} View "Success" for "page/post" 18.29 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Component "page/showPost" 0.01 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Partial "page/_showPost" 8.28 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Component "page/showComment" 0.02 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebDebugLogger} Partial "page/_showComment" 0.73 ms (1)
+Apr 08 08:54:13 symfony [info] {sfWebResponse} Send content (3942 o)
