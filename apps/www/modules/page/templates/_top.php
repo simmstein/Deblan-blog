@@ -56,7 +56,7 @@
 									data-original-title="RSS" class="apopover" rel="popover-below" 
 									data-content="<?php echo html(__("Alimentez votre actualité en me suivant via le flux RSS du blog")); ?>" 									
 								>
-									<img src="/images/top/feed.png" alt="" title="" />
+									<img src="/images/top/feed.png" alt="RSS" title="RSS" />
 									<span>Flux RSS</span>
 								</a>
 							</li>
@@ -65,7 +65,7 @@
 									href="https://twitter.com/SimonVieille"
 									data-original-title="Twitter" class="apopover" rel="popover-below" 
 									data-content="<?php echo html(__("Suivez-moi sur le service de microblogging Twitter, @SimonVieille")); ?>" 
-								><img src="/images/top/twitter.png" alt="" title="" /> <span>@SimonVieille</span></a>
+								><img src="/images/top/twitter.png" alt="Twitter" title="Twitter" /> <span>@SimonVieille</span></a>
 							</li>
 
 							<li>
@@ -74,7 +74,7 @@
 									data-original-title="Facebook" class="apopover" rel="popover-below" 
 									data-content="<?php echo html(__("Rejoignez mon réseau FaceBook")); ?>"
 								>
-									<img src="/images/top/facebook.png" alt="" title="" /> <span><?php echo __('Profil'); ?> Facebook</span></a>
+									<img src="/images/top/facebook.png" alt="Facebook" title="Facebook" /> <span><?php echo __('Profil'); ?> Facebook</span></a>
 								</li>
 							<li>
 								<a 
@@ -82,7 +82,12 @@
 									data-original-title="Linkedin" class="apopover" rel="popover-below"
 									data-content="<?php echo html(__("Rejoignez mon réseau Linkedin")); ?>"
 								>
-								<img src="/images/top/linkedin.png" alt="" title="" /> <span><?php echo __('Profil'); ?> Linkedin</span></a>
+								<img src="/images/top/linkedin.png" alt="Linkedin" title="Linkedin" /> <span><?php echo __('Profil'); ?> Linkedin</span></a>
+							</li>
+							<li>
+								<a href="http://flattr.com/thing/640789/Deblan" target="_blank">
+									<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
+								</a>
 							</li>
 						</ul>
 					</div>
