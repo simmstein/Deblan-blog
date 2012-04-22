@@ -10,7 +10,7 @@
 				<item>
 					<title><![CDATA[<?php echo $post->getTitle(); ?>]]></title>
 					<link>http://<?php echo $_SERVER['SERVER_NAME'], url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?></link>
-					<description><![CDATA[<?php echo html_entity_decode(parse_texte(utf8_decode($post->getContent()))); ?>	]]></description>
+					<description><![CDATA[<?php echo html_entity_decode((parse_texte(str_replace(array('&lt;', '&gt;'), array('<', '>'),$post->getContent()))), ENT_NOQUOTES, 'ISO-8859-1'); ?>	]]></description>
 					<guid isPermaLink="false"><?php echo $post->getId(); ?></guid>
 					<pubDate><?php echo date_format(new DateTime($post->getPublishedAt()), 'r'); ?></pubDate>
 				</item>
