@@ -30,6 +30,10 @@ body {
 	box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
+#top {
+	background: #fff url('../images/top.jpg') repeat-x;
+}
+
 h1 { 
 	display:none; 
 }

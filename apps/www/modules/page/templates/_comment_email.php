@@ -1,4 +1,4 @@
-<?php $domain = 'http://'. $_SERVER['SERVER_NAME'].'/'; ?>
+<?php $domain = 'http://'. $_SERVER['SERVER_NAME']; ?>
 <html>
 <head>
 <style>
@@ -25,7 +25,12 @@ body {
 
 	<table width="100%">
 		<p><?php echo __("Un nouveau commentaire vient d'être posté."); ?></p>
-		<p><?php echo __("Article concerné : "); ?><a href="<?php echo $domain,  url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?>"><?php echo $post->getTitle(); ?></a></p>
+		<p><?php echo __("Article concerné : "); ?><strong><a href="<?php echo $domain,  url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?>"><?php echo $post->getTitle(); ?></a></strong>.</p>
+
+		<p>De <strong><?php echo $comment->getAuthor(); ?></strong> :</p>
+
+		<blockquote><?php echo nl2br($comment->getContent()); ?></blockquote>
+
 	</table>
 
 	<p><?php echo __("Bonne journée :)"); ?></p>

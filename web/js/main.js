@@ -5,6 +5,7 @@ var deblan_boostrap = function() {
 	set_popovers();
 	set_comment_answerto_events();
 	set_auth_modal();
+	set_lightboxes();
 	//set_ajax_links();
 	$('input[type=file]').uniform();
 }
@@ -12,6 +13,24 @@ var deblan_boostrap = function() {
 $(document).ready(function() {
 	deblan_boostrap();
 });
+
+var set_lightboxes = function() {
+	var datas = [];
+
+	$('*[rel^="milkbox"]').each(function() {
+		var rel = $(this).attr('rel').replace('milkbox[', '').replace(']', '');
+		$(this).addClass('lightbox'+rel);
+		if(!datas[rel]) {
+			datas[rel] = rel;
+		}
+	});
+
+	$('.lightbox').colorbox({height:"75%"});
+
+	for(i in datas) {
+		$('.lightbox'+i).colorbox({rel: i, height:"75%"});
+	}
+}
 
 var set_auth_modal = function() {
 	$('#auth_close').click(function(e) {

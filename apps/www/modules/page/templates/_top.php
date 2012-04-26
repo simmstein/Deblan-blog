@@ -31,7 +31,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="content">
+	<div class="content" id="top">
 		<div class="page-header">
 			<h1><?php echo sfContext::getInstance()->getResponse()->getTitle(); ?></h1>
 

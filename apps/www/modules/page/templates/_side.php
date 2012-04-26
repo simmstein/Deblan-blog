@@ -16,6 +16,13 @@
 
 	<div class="no-padding side-block">
 		<h4><?php echo __('Vidéo à la une'); ?></h4>
+
+		<video data-setup="{}" width="218" height="126" controls="controls"class="video-js vjs-default-skin">
+			<source src="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv" type="video/ogg" />
+			<a href="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv">Téléchager la vidéo.</a>
+		</video>
+
+		<?php /*
 		<div id="lecteur_27111"></div>	
 		<script type="text/javascript" src="http://www.supportduweb.com/page/js/flashobject.js"></script>
     <script type="text/javascript">
@@ -33,6 +40,7 @@
       flashObject("http://flash.supportduweb.com/lecteur_flv/v1_27.swf", "lecteur_27111", "218", "126", "8", false, flashvars_27111, params_27111, attributes_27111);
     //-->
     </script>
+		*/ ?>
 	</div>
 
 	<div class="side-block">

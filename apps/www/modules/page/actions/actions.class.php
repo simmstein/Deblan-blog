@@ -143,7 +143,8 @@ class pageActions extends sfActions
 				$template = 'comment_email';
 
 				$mailBody = $this->getPartial($template, array(
-					'post' => $post
+					'post' => $post,
+					'comment' => $form->getObject()
 				));
 
 				$mailer = $this->getMailer();
