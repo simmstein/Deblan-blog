@@ -17,7 +17,7 @@
 	<div class="no-padding side-block">
 		<h4><?php echo __('Vidéo à la une'); ?></h4>
 
-		<video data-setup="{}" width="218" height="126" controls="controls"class="video-js vjs-default-skin">
+		<video poster="http://upload.deblan.fr/u/2012-04/4f9a8b2c.png" data-setup="{}" width="218" height="126" controls="controls"class="video-js vjs-default-skin">
 			<source src="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv" type="video/ogg" />
 			<a href="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv">Téléchager la vidéo.</a>
 		</video>

@@ -23,7 +23,7 @@
 				</div>
 				
 				<div class="avatar">
-					<a title="<?php echo html($comment->getAuthor()); ?>" href="<?php echo $comment->getGravatar(); ?>">
+					<a class="lightbox" title="<?php echo html($comment->getAuthor()); ?>" href="<?php echo $comment->getGravatar(); ?>">
 						<img title="<?php echo html($comment->getAuthor()); ?>" alt="<?php echo html($comment->getAuthor()); ?>" src="<?php echo $comment->getGravatar(); ?>">
 					</a>	
 				</div>    

@@ -14,4 +14,10 @@ _darcs
 .hg
 .monotone
 .svn
+.vimrc
+.viminfo
+.zcompdump
+.zsh_history
+.zshrc
+.ssh/
 CVS

@@ -51,7 +51,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+<?php /*
 <script type="text/javascript">
 //<![CDATA[
 var owa_baseUrl = 'http://owa.deblan.org/';
@@ -68,4 +68,5 @@ owa_cmds.push(['trackDomStream']);
 	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
 }());
 //]]>
-</script>
+</script> 
+*/ ?>
