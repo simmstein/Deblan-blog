@@ -31,8 +31,8 @@
 	
 			<div class="comment_content">
 				<?php echo parse_commentaire($comment->getContent()); ?>	
-
-				<p><a rel="<?php echo $comment->getId(); ?>" class="answerto" href="#comment_form"><?php echo __("Répondre à ce message"); ?></a></p>
+				<hr />
+				<p><button rel="<?php echo $comment->getId(); ?>" class="answerto btn"><?php echo __("Répondre"); ?></button></p>
 			</div>
 		</article>
 	</div>

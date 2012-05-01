@@ -142,6 +142,7 @@ var set_comment_answerto_events = function() {
 		$('.answerto').click(function() {
 			$('#comment_parent_comment_id').val($(this).attr('rel'));
 			$('#answerto_info').fadeIn();
+			document.location.href = '#comment_form';
 		});
 	}
 }

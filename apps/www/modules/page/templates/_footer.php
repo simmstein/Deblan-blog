@@ -2,8 +2,8 @@
   </div>
 
 	<footer>
-		<p><?php echo __("Auteur : Simon Vieille - Hébergement personnel - Textes libres sauf indication(s) contraire(s)"); ?></p>
-		<p><a id="auth_open" data-controls-modal="modal-auth" data-backdrop="true" data-keyboard="true" href="<?php echo url_for('@auth'); ?>"><?php echo __('Connexion'); ?></a></p>
+		<p><?php echo __("Auteur : Simon Vieille - Hébergement personnel - Textes libres sauf indication(s) contraire(s)"); ?> #
+		<a id="auth_open" data-controls-modal="modal-auth" data-backdrop="true" data-keyboard="true" href="<?php echo url_for('@auth'); ?>"><?php echo __('Connexion'); ?></a></p>
 	</footer>
 </div>
 
@@ -51,7 +51,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<?php /*
+<?php /**/?>
 <script type="text/javascript">
 //<![CDATA[
 var owa_baseUrl = 'http://owa.deblan.org/';
@@ -69,4 +69,4 @@ owa_cmds.push(['trackDomStream']);
 }());
 //]]>
 </script> 
-*/ ?>
+<?php /**/ ?>

@@ -79,18 +79,13 @@ $(document).ready(function() {
 			<?php endforeach; ?>
 			<tr>
 				<td></td>
-				<td>
-						<p>
-							<input type="submit" class="btn primary" value="<?php echo __('Envoyer'); ?>" />
-							<input type="reset" class="btn" value="<?php echo __('Annuler'); ?>" />
-						</p>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
 				<td><p><?php echo __("Tout ce qui est interdit par la legislation française sera supprimé."); ?></p></td>
 			</tr>
 		</table>
+		<div class="actions">
+			<input type="submit" class="btn primary" value="<?php echo __('Envoyer'); ?>" />
+			<input type="reset" class="btn" value="<?php echo __('Annuler'); ?>" />
+		</div>
 	</div>
 </form>
 
