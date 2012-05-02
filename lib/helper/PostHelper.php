@@ -140,6 +140,7 @@ function parse_h5($data) {
 }
 
 function parse_li($data) {
+	$data[1] = htmlentities($data[1]);
   return '<li>'.trim(utf8_decode($data[1])).'</li>';
 }
 
@@ -389,7 +390,7 @@ function parse_texte($texte) {
   $texte = preg_replace_callback('`<sstitre>(.*)</sstitre>`isU', 'parse_h5', $texte);
   $texte = preg_replace_callback('`<videoflv>(.*)</videoflv>`isU', 'parse_videoflv', $texte);
   $texte = preg_replace_callback('`<mp3>(.*)</mp3>`isU', 'parse_mp3', $texte);
-  //$texte = preg_replace_callback('`<li>(.*)</li>`isU', 'parse_li', $texte);
+  $texte = preg_replace_callback('`<li>(.*)</li>`isU', 'parse_li', $texte);
   $texte = preg_replace_callback('`<style>(.*)</style>`isU', 'parse_style', $texte);
   $texte = preg_replace_callback('`<quote auteur="([^"]+)">(.*)</quote>`isU', 'parse_quote2', $texte);
   $texte = preg_replace_callback('`<quote auteur=\'([^\']+)\'>(.*)</quote>`isU', 'parse_quote2', $texte);
