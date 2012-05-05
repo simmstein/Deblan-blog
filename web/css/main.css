@@ -93,3 +93,4 @@ ul.profile_web li{list-style:none;padding:2px 0 2px 17px;}ul.profile_web li stro
 #similar{padding:20px 0;}
 .twtr-timeline,.twtr-doc{border-radius:0 !important;}
 pre{font-size:11px !important;}
+.pagination{padding:5px;}.pagination a{border:0;padding:0;line-height:inherit;}

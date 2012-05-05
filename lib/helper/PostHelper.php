@@ -140,8 +140,8 @@ function parse_h5($data) {
 }
 
 function parse_li($data) {
-	$data[1] = htmlentities($data[1]);
-  return '<li>'.trim(utf8_decode($data[1])).'</li>';
+	//$data[1] = htmlentities($data[1]);
+  return '<li>'.trim(($data[1])).'</li>';
 }
 
 function parse_nonl2br($data) {
