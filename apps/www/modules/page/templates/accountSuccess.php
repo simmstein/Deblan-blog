@@ -21,15 +21,12 @@
 					</tr>
 				<?php endif; ?>
 			<?php endforeach; ?>
-			<tr>
-				<td></td>
-				<td>
-						<p>
-							<input type="submit" class="btn primary" value="<?php echo __('Enregistrer'); ?>" />
-							<input type="reset" class="btn" value="<?php echo __('Annuler'); ?>" />
-						</p>
-				</td>
-			</tr>
 		</table>
+		<div class="actions">
+			<p>
+				<input type="submit" class="btn primary" value="<?php echo __('Enregistrer'); ?>" />
+				<input type="reset" class="btn" value="<?php echo __('Annuler'); ?>" />
+			</p>
+		</div>
 	</div>
 </form>

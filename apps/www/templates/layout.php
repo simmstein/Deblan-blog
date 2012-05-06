@@ -6,7 +6,9 @@
     <?php include_title() ?>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
+		<link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css" />
 		<?php include_javascripts(); ?>
+		<script type="text/javascript" src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js"></script>
     <?php //include_compressed_stylesheets() ?>
   </head>
   <body>

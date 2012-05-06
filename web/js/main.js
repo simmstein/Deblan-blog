@@ -76,18 +76,9 @@ var set_lightboxes = function() {
 	var datas = [];
 
 	$('*[rel^="milkbox"]').each(function() {
-		var rel = $(this).attr('rel').replace('milkbox[', '').replace(']', '');
-		$(this).addClass('lightbox'+rel);
-		if(!datas[rel]) {
-			datas[rel] = rel;
-		}
+		var rel = $(this).attr('rel').replace('milkbox', 'lightbox');
+		$(this).attr('rel', rel);
 	});
-
-	$('.lightbox').colorbox();
-
-	for(i in datas) {
-		$('.lightbox'+i).colorbox({rel: i});
-	}
 }
 
 var set_auth_modal = function() {
