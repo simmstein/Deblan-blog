@@ -1,6 +1,5 @@
 <?php foreach($pager as $page): ?>
 	<?php include_component('page', 'showPost', array('post' => $page)); ?>	
-	<div class="page" rel="<?php echo $pager->getPage(); ?>"></div>
 <?php endforeach; ?>
 
 <?php 
@@ -16,7 +15,8 @@
 ?>
 
 <?php /*<script type="text/javascript">
+window.currentPage = 1;
 $(document).ready(function() {
-	infinityScroll('<?php echo url_for('@homepage?page=-page-'); ?>');
+	infinityScroll('<?php echo url_for('@homepage_page?page=-page-'); ?>');
 });
 </script> */ ?>

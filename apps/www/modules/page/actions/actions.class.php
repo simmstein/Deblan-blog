@@ -240,6 +240,7 @@ class pageActions extends sfActions
 		$criteria->addJoin(PostHasCategoryPeer::POST_ID, PostPeer::ID);
 		$criteria->addJoin(CategoryPeer::ID, PostHasCategoryPeer::CATEGORY_ID);	
 		$criteria->addAnd(CategoryPeer::IS_ACTIVE, true);
+		$criteria->setDistinct();
 
 		$empty = true;
 		foreach($keywords as $k => $v) {

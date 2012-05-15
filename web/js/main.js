@@ -16,6 +16,24 @@ $(document).ready(function() {
 	deblan_boostrap();
 });
 
+/*var infinityScroll = function(urltpl) {
+	var load = false;
+	var offset = $('.page:last').offset(); 
+	$(window).scroll(function() {
+		if((offset.top-$(window).height() <= $(window).scrollTop()) && load != window.currentPage) {
+				window.currentPage++;
+				var id = 'page-'+window.currentPage;
+				var new_page = $('<div>').addClass('page').attr('id', id);
+				$('<div>').load(urltpl.replace('-page-', window.currentPage)+' .pages', function(html) {
+					new_page.append(html);
+					$('#next-pages').append(new_page);
+					load = window.currentPage;
+					offset = $('#'+id).offset(); 
+				});
+		}
+	});
+}*/
+
 var set_rotation = function() {
 	var r = 6;
 	var _the_event = function(e) {
