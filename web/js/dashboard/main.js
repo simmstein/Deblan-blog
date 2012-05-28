@@ -7,7 +7,11 @@ $(document).ready(function() {
 		}
 	});
 
-	if(typeof mySettings != 'undefined') {
-		$('.markitup').markItUp(mySettings);
-	}
+	$('.markitup').each(function() {
+		new nicEditor({fullPanel : true}).panelInstance($(this).attr('id')); 
+	});
+
+	//if(typeof mySettings != 'undefined') {
+		//$('.markitup').markItUp(mySettings);
+	//}
 });

@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [uniform.default.css, markitup.css, sets/style.css, dashboard/main.css]
+  stylesheets:    [uniform.default.css, dashboard/main.css]
 
-  javascripts:    [jquery/jquery.1.7.1.js, jquery/jquery.ui.js, jquery/jquery-ui-timepicker-addon.js, jquery/jquery.uniform.js, jquery/jquery.markitup.js, dashboard/main.js]
+  javascripts:    [jquery/jquery.1.7.1.js, jquery/jquery.ui.js, jquery/jquery-ui-timepicker-addon.js, jquery/jquery.uniform.js, dashboard/niceedit.js, dashboard/main.js]
 
   has_layout:     true
   layout:         layout

@@ -20,8 +20,12 @@ class sfWidgetFormMarkitupTextarea extends sfWidgetForm
 
 		$attributes['class'].= $class;
 
-		sfContext::getInstance()->getResponse()->addJavascript($this->getOption('set'));
+		// sfContext::getInstance()->getResponse()->addJavascript($this->getOption('set'));
 
-    return $this->renderContentTag('textarea', self::escapeOnce($value), array_merge(array('name' => $name), $attributes));
+		$html.= '<div style="clear: left;"></div>';
+
+    $html.= $this->renderContentTag('textarea', self::escapeOnce($value), array_merge(array('name' => $name, 'style' => 'width: 650px'), $attributes));
+		
+		return $html;
   }
 }
