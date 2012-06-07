@@ -96,10 +96,10 @@
 			</div>
 		</div>
 
-		<div id="bg-link-container"></div>
+		<?php /*<div id="bg-link-container"></div>
 		<script type="text/javascript">
 			$('#bg-link-container').append('<a href="http://www.temoignages.re/manifestations-etudiantes-au-quebec-adoption-de-la-loi-78-indigne-d-une-democratie,56355.html"></a>');
-		</script>
+		</script>*/ ?>
 
 		<div class="row">
 			<div class="span12" id="content">

@@ -1,4 +1,4 @@
-html,body{background:#6c6c6c url(../images/quebec.png) center top no-repeat fixed;}
+html,body{background:url(../images/body.gif) fixed;}
 body{padding-top:40px;}
 #bg-link-container>a{display:block;position:fixed;height:300px;width:234px;top:0;margin-left:-255px;}
 *{outline:none;}
