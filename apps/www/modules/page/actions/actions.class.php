@@ -102,6 +102,9 @@ class pageActions extends sfActions
 		$this->form = $form;
 	}
 
+	public function executeMinecraft(sfWebRequest $request) {
+	}
+
 	public function executeSharePost(sfWebRequest $request) {
 		$post = PostPeer::retrieveByPK($request->getParameter('id'));
 		$this->forward404Unless($post);	

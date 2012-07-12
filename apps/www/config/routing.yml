@@ -10,6 +10,10 @@ contact:
   url: /contact/:sent
   param: { module: page, action: contact, sent: 0 }
 
+minecraft:
+  url: /minecraft
+  param: { module: page, action: minecraft }
+
 post:
   url: /post/:id/:slugy_path/:sent
   param: { module: page, action: post, sent: 0 }
