@@ -122,6 +122,60 @@ class pageActions extends sfActions
 		$this->sent = $request->getParameter('sent') > 0;
 	}
 
+	public function executeMinecraftAjax(sfWebRequest $request) {
+		$mem = new Memcached();
+		$mem->addServer('localhost', 11211);
+
+
+		if($info = $mem->get('minecraft_server_info')) {
+			echo $info;
+			return sfView::NONE;
+		}
+
+		$info = array(
+			'up'     => true,
+			'online' => 0,
+			'places' => 20
+		);
+
+		$socket = @fsockopen('play.deblan.fr', 25565);
+
+		if($socket) {
+			fwrite($socket, "\xFE");
+			$data = fread($socket, 1024);
+			fclose($socket);
+
+			if($data &&  substr($data, 0, 1) == "\xFF") {
+				$_info = explode(
+					"\xA7", 
+					mb_convert_encoding(
+						substr($data, 1), 
+						"iso-8859-1", 
+						"utf-16be"
+					)
+				);
+			
+				/*$serverName = substr($info[0], 1);
+				$playersOnline = $info[1];
+				$playersMax = $info[2];*/
+
+				$info['online'] = $_info[1];
+				$info['places'] = $_info[2];
+			}
+		}
+		else {
+			$info['up'] = false;
+		}
+
+		$json_info = json_encode($info);
+
+		$mem->set('minecraft_server_info', $json_info, 60*5);
+
+		echo $json_info;
+
+		return sfView::NONE;
+	}
+
 	public function executeSharePost(sfWebRequest $request) {
 		$post = PostPeer::retrieveByPK($request->getParameter('id'));
 		$this->forward404Unless($post);	

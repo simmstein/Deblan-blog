@@ -2,9 +2,37 @@
 
 <div class="article-body">
 	<?php echo parse_texte(utf8_decode($post->getContent())); ?>	
+
+	<div id="mc_info"></div>
 </div>
 
-<script type="text/javascript">$('#neutral_network').hide();</script>
+
+<script type="text/javascript">
+$(function() {
+	$('#neutral_network').hide();
+
+	$.ajax({
+		url: '<?php echo url_for('@minecraft_ajax'); ?>',
+		dataType: 'json',
+		success: function(data) {
+			if(!data.up) {
+				$('#mc_info').html('Actuellement le serveur ne répond pas. Il est sans doute en maintenance.');
+			}
+			else {
+				if(data.online > 1) {
+					$('#mc_info').html('Déjà '+data.online+' joueurs connectés, rejoignez-les vite :)');
+				}
+				else if(data.online == 1) {
+					$('#mc_info').html('Un joueur est déjà connecté :)');
+				}
+				else {
+					$('#mc_info').html('Aucun joueur sur le serveur pour le moment :)');
+				}
+			}
+		}
+	});
+});
+</script>
 
 
 <div id="comments"></div>

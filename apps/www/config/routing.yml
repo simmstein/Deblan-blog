@@ -14,6 +14,10 @@ minecraft:
   url: /minecraft
   param: { module: page, action: minecraft }
 
+minecraft_ajax:
+  url: /minecraft_ajax
+  param: { module: page, action: minecraftAjax }
+
 post:
   url: /post/:id/:slugy_path/:sent
   param: { module: page, action: post, sent: 0 }
