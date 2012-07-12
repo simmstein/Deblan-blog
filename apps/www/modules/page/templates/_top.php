@@ -106,7 +106,7 @@
 		<div class="row">
 			<div class="span12" id="content">
 				<div>
-					<div class="alert-message warning">
+					<div id="neutral_network" class="alert-message warning">
 						<img src="https://ssl.neutralnetwork.org/favicon.ico" alt="Neutral Nework" title="Neutral Nework" />
 						Découvrez le réseau IRC <strong>libre</strong> et <strong>sécurisé</strong> de Deblan et Grenadine : <a href="https://ssl.neutralnetwork.org/"> <strong>Neutral Nework</strong></a>
 					</div>

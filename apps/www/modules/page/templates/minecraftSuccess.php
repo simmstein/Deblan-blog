@@ -3,3 +3,5 @@
 <p><img src="/images/mc.jpg" alt="Minecraft" title="Minecraft" /></p>
 
 <p>Pour venir jouer avec nous, connectez-vous sur <a>PLAY.DEBLAN.FR</a>.</p>
+
+<script type="text/javascript">$('#neutral_network').hide();</script>
