@@ -103,6 +103,21 @@ class pageActions extends sfActions
 	}
 
 	public function executeMinecraft(sfWebRequest $request) {
+		$criteria = new Criteria();
+		$criteria->addAnd(PostPeer::TITLE, 'page:minecraft');
+		$post = PostPeer::doSelectOne($criteria);
+		$this->forward404Unless($post);
+
+
+		$form = new CommentFrontForm();
+
+		if($this->processPostCommentForm($request, $post, $form)) {
+			$this->redirect('@minecraft');
+		}
+
+		$this->form = $form;
+		$this->post = $post;
+		$this->sent = $request->getParameter('sent') > 0;
 	}
 
 	public function executeSharePost(sfWebRequest $request) {
@@ -123,21 +138,11 @@ class pageActions extends sfActions
 		return sfView::NONE;
 	}
 
-	public function executePost(sfWebRequest $request) {		
-		$post = PostPeer::retrieveByPK($request->getParameter('id'));
-		$this->forward404Unless($post);
-
-
-		if($request->getParameter('slugy_path') != $post->getSlugyPath()) {
-			$this->redirect('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath());
-		}
-
-		$form = new CommentFrontForm();
-
+	public function processPostCommentForm(sfWebRequest $request, Post $post, CommentFrontForm &$form) {
 		if($request->isMethod('post')) {
 			$datas = $request->getParameter($form->getName());
 			$form->bind($datas);
-			
+		
 			if($form->isValid()) {
 				$form->getObject()->setPostId($post->getId());
 				$form->getObject()->setIp($_SERVER['REMOTE_ADDR']);
@@ -160,12 +165,30 @@ class pageActions extends sfActions
 						->setSubject($subject)
 						->setBody($mailBody, 'text/html');
 
-				$mailer->sendNextImmediately()->send($message);				
+				$mailer->sendNextImmediately()->send($message);
 
-				$this->redirect('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath().'&sent=1#top');
+				return true;
 			}
 		}
 
+		return false;
+	}
+
+	public function executePost(sfWebRequest $request) {		
+		$post = PostPeer::retrieveByPK($request->getParameter('id'));
+		$this->forward404Unless($post);
+
+
+		if($request->getParameter('slugy_path') != $post->getSlugyPath()) {
+			$this->redirect('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath());
+		}
+
+		$form = new CommentFrontForm();
+
+		if($this->processPostCommentForm($request, $post, $form)) {
+			$this->redirect('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath().'&sent=1#top');
+		}
+			
 		sfContext::getInstance()->getResponse()->addMeta('title', self::title_prefix.$post->getTitle());
 		sfContext::getInstance()->getResponse()->addMeta('image_src', $post->getPicture());
 		sfContext::getInstance()->getResponse()->addMeta('description', textToMetaDescription($post->getContent()));
