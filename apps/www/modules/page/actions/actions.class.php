@@ -103,6 +103,8 @@ class pageActions extends sfActions
 	}
 
 	public function executeMinecraft(sfWebRequest $request) {
+		sfContext::getInstance()->getResponse()->addMeta('title', self::title_prefix.'Minecraft');
+
 		$criteria = new Criteria();
 		$criteria->addAnd(PostPeer::TITLE, 'page:minecraft');
 		$post = PostPeer::doSelectOne($criteria);
