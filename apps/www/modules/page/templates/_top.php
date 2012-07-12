@@ -4,7 +4,7 @@
 			<a class="brand" href="<?php echo url_for('@homepage'); ?>"><img src="http://blog.deblan.fr/favicon.ico" alt="" title="" /></a>
 			<ul class="nav">
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@homepage'))?'active':''; ?>"><a class="hash toplink" href="<?php echo url_for('@homepage'); ?>"><?php echo __('Accueil'); ?></a></li>
-				<li><a rel="popover-below" data-original-title="<?php echo __('Serveur IRC'); ?>" data-content="<?php echo html(__("Rejoignez le serveur IRC de la communauté Deblan")); ?>" href="http://irc.deblan.fr/"><?php echo __('Discussion'); ?></a></li>
+				<li><a rel="popover-below" data-original-title="<?php echo __('Serveur IRC'); ?>" data-content="<?php echo html(__("Rejoignez le serveur IRC de la communauté Deblan")); ?>" href="http://ssl.neutralnetwork.org/"><?php echo __('Discussion'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@contact'))?'active':''; ?>"><a href="<?php echo url_for('@contact'); ?>" class="hash toplink"><?php echo __('Contact'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>" class="hash toplink"><?php echo __('Minecraft'); ?></a></li>
 				
