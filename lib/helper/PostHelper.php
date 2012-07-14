@@ -12,7 +12,7 @@ function parse_commentaire($str) {
 function parse_p($data) {
 	//return str_replace("\n", "<br />", $data[0]);
 
-  $data[2] = htmlentities($data[2]);
+  /*$data[2] = htmlentities($data[2]);
   
   $html = array('`&lt;a(.*)&gt;(.*)&lt;/a&gt;`isU', '`&lt;img(.*)&gt;`isU', 
           '`&lt;strong(.*)&gt;(.*)&lt;/strong&gt;`isU', '`&lt;em(.*)&gt;(.*)&lt;/em&gt;`isU', '`&lt;url&gt;(.*)&lt;/url&gt;`isU', '`&lt;li(.*)&gt;(.*)&lt;/li&gt;`isU',
@@ -28,7 +28,7 @@ function parse_p($data) {
       ),
        $data[2]
     );
-  }
+  }*/
   
   if(preg_match('`^[ ]+`', @$data[1])) {
    return '<p'.$data[1].'>'.nl2br(trim($data[2])).'</p>';
@@ -42,7 +42,7 @@ function parse_p($data) {
 }
 
 function parse_centre($data) {
-  $data[1] = htmlentities($data[1]);
+  /*$data[1] = htmlentities($data[1]);
   
   $html = array('`&lt;a(.*)&gt;(.*)&lt;/a&gt;`isU', '`&lt;img(.*)&gt;`isU', 
           '`&lt;strong(.*)&gt;(.*)&lt;/strong&gt;`isU', '`&lt;em(.*)&gt;(.*)&lt;/em&gt;`isU', '`&lt;url&gt;(.*)&lt;/url&gt;`isU', '`&lt;li(.*)&gt;(.*)&lt;/li&gt;`isU',
@@ -58,12 +58,13 @@ function parse_centre($data) {
       ),
        $data[1]
     );
-  }
+  } */
+
   return '<p class="centre">'.nl2br(trim($data[1])).'</p>';
 }
 
 function parse_droite($data) {
-  $data[1] = htmlentities($data[1]);
+  /*$data[1] = htmlentities($data[1]);
   
   $html = array('`&lt;a(.*)&gt;(.*)&lt;/a&gt;`isU', '`&lt;img(.*)&gt;`isU', 
           '`&lt;strong(.*)&gt;(.*)&lt;/strong&gt;`isU', '`&lt;em(.*)&gt;(.*)&lt;/em&gt;`isU', '`&lt;url&gt;(.*)&lt;/url&gt;`isU', '`&lt;li(.*)&gt;(.*)&lt;/li&gt;`isU',
@@ -79,7 +80,7 @@ function parse_droite($data) {
       ),
        $data[1]
     );
-  }
+  }*/
     
   return '<p class="droite">'.nl2br(trim($data[1])).'</p>';
 }
@@ -94,7 +95,7 @@ function parse_fldroite($data) {
 
 
 function parse_h4($data) {
-  $data[1] = htmlentities($data[1]);
+  /*$data[1] = htmlentities($data[1]);
 
   $html = array('`&lt;a(.*)&gt;(.*)&lt;/a&gt;`isU', '`&lt;img(.*)&gt;`isU', 
           '`&lt;strong(.*)&gt;(.*)&lt;/strong&gt;`isU', '`&lt;em(.*)&gt;(.*)&lt;/em&gt;`isU', '`&lt;url&gt;(.*)&lt;/url&gt;`isU', '`&lt;li(.*)&gt;(.*)&lt;/li&gt;`isU',
@@ -111,13 +112,13 @@ function parse_h4($data) {
        $data[1]
     );
   }
-      
+      */
   
   return '<h4>'.$data[1].'</h4>';
 }
 
 function parse_h5($data) {
-  $data[1] = htmlentities($data[1]);
+  /*$data[1] = htmlentities($data[1]);
 
   $html = array('`&lt;a(.*)&gt;(.*)&lt;/a&gt;`isU', '`&lt;img(.*)&gt;`isU', 
           '`&lt;strong(.*)&gt;(.*)&lt;/strong&gt;`isU', '`&lt;em(.*)&gt;(.*)&lt;/em&gt;`isU', '`&lt;url&gt;(.*)&lt;/url&gt;`isU', '`&lt;li(.*)&gt;(.*)&lt;/li&gt;`isU',
@@ -133,7 +134,7 @@ function parse_h5($data) {
       ),
        $data[1]
     );
-  }
+  }*/
       
   
   return '<h5>'.$data[1].'</h5>';
