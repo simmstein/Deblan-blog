@@ -32,7 +32,8 @@ div.popover{z-index:10;}
 .corner{position:relative;}
 .hidden{display:none;}
 .page-header{padding-bottom:5px;}
-#sidebar .side-block h4,.article-header h2{background:#eee;border:1px solid #ddd;color:#999;padding:4px 9px;height:36px;-webkit-border-radius:3px 0px 0px 3px;border-radius:3px 0px 0px 3px;}
+#sidebar .side-block h4,.article-header h2{background:#eee;border:1px solid #ddd;color:#999;padding:4px 9px;height:36px;}
+.article-header h2{-webkit-border-radius:3px 0px 0px 3px;border-radius:3px 0px 0px 3px;}
 .article-header h2 a{color:#999;font-size:18px;text-decoration:none;}
 #sidebar .side-block h4{color:#999;background:#eee;border:1px solid #ddd;}
 #sidebar>div{background:#fefefe;border:1px solid #ddd;border-top:0;color:#333;margin-bottom:10px;}
