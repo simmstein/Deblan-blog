@@ -53,8 +53,8 @@ div.popover{z-index:10;}
 #sidebar{margin-left:20px;}
 .article-body{padding:10px 0 30px 0;}
 .article-body pre{cursor:pointer;}
-.article-body pre:before{content:"Cliquez pour afficher le code";position:absolute;margin-top:-30px;text-align:right;width:670px;padding-right:20px;font-size:10px;font-family:Verdana;opacity:0;-webkit-transition:all 0.3s ease-in;-moz-transition:all 0.3s ease-in;-o-transition:all 0.3s ease-in;transition:all 0.3s ease-out;background:url('../images/page_white_code.png') center right no-repeat;}
-.article-body pre:hover:before{display:block;opacity:1;}
+.article-body pre{max-height:300px;overflow:hidden;}.article-body pre:before{content:"Cliquez pour afficher le code";position:absolute;margin-top:-30px;text-align:right;width:670px;padding-right:20px;font-size:10px;font-family:Verdana;opacity:0;-webkit-transition:all 0.3s ease-in;-moz-transition:all 0.3s ease-in;-o-transition:all 0.3s ease-in;transition:all 0.3s ease-out;background:url('../images/page_white_code.png') center right no-repeat;}
+.article-body pre:hover{max-height:inherit;-webkit-transition:all 0.3s ease-in;-moz-transition:all 0.3s ease-in;-o-transition:all 0.3s ease-in;transition:all 0.3s ease-out;}.article-body pre:hover:before{display:block;opacity:1;}
 .article-body p{line-height:22px;}
 .centre{text-align:center;}
 .droite{text-align:right;}

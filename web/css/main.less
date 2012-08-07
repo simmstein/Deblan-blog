@@ -366,6 +366,9 @@ div.popover {
 
 .article-body {
 	pre {
+		max-height: 300px;
+		overflow: hidden;
+
 		&:before {
 			content: "Cliquez pour afficher le code";
 			position:absolute;
@@ -382,12 +385,14 @@ div.popover {
 			transition: all .3s ease-out;
 			background:url('../images/page_white_code.png') center right no-repeat;
 		}
-	}
-}
 
-.article-body {
-	pre {
 		&:hover {
+			max-height: inherit;
+			-webkit-transition: all .3s ease-in;
+			-moz-transition: all .3s ease-in;
+			-o-transition: all .3s ease-in;
+			transition: all .3s ease-out;
+
 			&:before {
 				display:block;
 				opacity:1;

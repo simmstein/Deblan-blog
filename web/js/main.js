@@ -119,7 +119,7 @@ var set_pre_events = function() {
 				'<h3>Contenu du script</h3>'+
 			'</div>'+
 			'<div class="modal-body">'+
-				'<textarea style="width:520px; height:200px"">'+script+'</textarea>'+
+				'<textarea style="max-width: 520px; width:520px; height:200px"">'+script+'</textarea>'+
 			'</div>'
 		);
 
