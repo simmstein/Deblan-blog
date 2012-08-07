@@ -16,7 +16,7 @@ class commentActions extends autoCommentActions
 	public function preExecute() {
 		parent::preExecute();
 
-		if(!$this->getUser()->getGuardUser()->hasPermission('Rédaction')) {
+		if(!$this->getUser()->getGuardUser()->hasPermission('Rediger')) {
 			$this->redirect('@homepage');
 			die;
 		}

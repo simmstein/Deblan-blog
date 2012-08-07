@@ -2,32 +2,32 @@ Contenus:
   items:
     item1:
       title: Tableau de bord
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @homepage
 
     item2:
       title: Articles
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @post
     
     item3:
       title: Categories
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @category
 
     item4:
       title: Commentaires
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @comment
 
     item5:
       title: Liens
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @link
 
     item6:
       title: Médiathèque
-      permissions: [Administrer, Rédaction]
+      permissions: [Administrer, Rediger]
       route: @sf_asset_library_root
 
 Administrer:

@@ -12,4 +12,12 @@ require_once dirname(__FILE__).'/../lib/BasesfGuardUserActions.class.php';
  */
 class sfGuardUserActions extends basesfGuardUserActions
 {
+	public function preExecute() {
+		parent::preExecute();
+
+		if(!$this->getUser()->getGuardUser()->hasPermission('Administrer')) {
+			$this->redirect('@homepage');
+			die;
+		}
+	}
 }

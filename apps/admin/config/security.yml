@@ -5,4 +5,4 @@ remember_me:
 
 default:
   is_secure: true
-  credentials: [[ administration ]]
+  credentials: [[Administrer, Rediger]]
