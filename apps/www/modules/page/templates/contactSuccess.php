@@ -7,8 +7,8 @@
 <p>
 	<?php echo __("Vous pouvez me contacter directement par courriel à ces deux adresses :"); ?><br />
 	<ul>
+		<li><img alt="" src="http://www.deblan.fr/index.php?module=mail&amp;type=public&amp;user=simon&amp;domain=deblan.fr"></li>
 		<li><img alt="" src="http://www.deblan.fr/index.php?module=mail&amp;type=public&amp;user=simon.vieille&amp;domain=free.fr"></li>
-		<li><img alt="" src="http://www.deblan.fr/index.php?module=mail&amp;type=public&amp;user=simon.vieille&amp;domain=gmail.com"></li>
 	</ul>
 </p>
 

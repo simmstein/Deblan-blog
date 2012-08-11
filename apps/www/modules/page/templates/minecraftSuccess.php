@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
 $(function() {
-	$('#neutral_network').hide();
+	$('#announce').hide();
 
 	$.ajax({
 		url: '<?php echo url_for('@minecraft_ajax'); ?>',

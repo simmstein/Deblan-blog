@@ -15,6 +15,7 @@ h1{display:none;}
 .clear{clear:both;}
 #picture{margin-right:10px;}
 #picture img{height:115px;}
+#picture>img{border:3px solid #d3d3d3;}
 #webcam{position:absolute;width:150px;padding:3px 0 0 0;text-align:right;}
 #webcam img{width:16px;height:16px;}
 #bio{color:#777777;font-family:Georgia,serif;font-size:14px;font-style:italic;}

@@ -12,30 +12,17 @@
 					<link>http://<?php echo $_SERVER['SERVER_NAME'], url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?></link>
 					<description><![CDATA[<?php 
 					echo html_entity_decode(parse_texte(utf8_decode($post->getContent()))); 
-					?>	]]></description>
+					?>]]></description>
 					<guid isPermaLink="false"><?php echo $post->getId(); ?></guid>
 					<pubDate><?php echo date_format(new DateTime($post->getPublishedAt()), 'r'); ?></pubDate>
+					<?php $pl = false; foreach($post->getCategories() as $category): ?>
+						<category><![CDATA[<?php echo $category->getName(); ?>]]></category>
+						<?php if(in_array($category->getId(), array(11, 6)) && !$pl): $pl = true; ?>
+							<category><![CDATA[planet-libre]]></category>
+						<?php endif; ?>
+					<?php endforeach; ?>
 				</item>
 			<?php endforeach; ?>
 		<?php endif; ?>
 	</channel>
 </rss>
-
-<?php
-/**
- *
- * Tracking
- *
- */
-
-require_once('/var/www/service-web/www/owa.deblan.org/public_html/owa_php.php');
-		
-$owa = new owa_php();
-// Set the site id you want to track
-$owa->setSiteId('fd0aaff20fe48fdf58f716063fecf7b4');
-// Uncomment the next line to set your page title
-$owa->setPageTitle(sfContext::getInstance()->getResponse()->getTitle());
-// Set other page properties
-$owa->setProperty('rss', 'yes');
-$owa->setProperty('admin', 'no');
-$owa->trackPageView();

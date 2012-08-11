@@ -42,7 +42,7 @@
 					<div id="webcam">
 						<a href="#" rel="popover-below" data-original-title="Webcam en live" data-content="<?php echo htmlentities('<img src="http://webcam.deblan.org/ressources/webcam.jpg?'.time().'" alt="" title="" width="250" />'); ?>" ><img src="/images/webcam.png" alt="Webcam en live" title="Webcam en live" /></a>
 					</div>
-					<img src="/images/picture.jpg" alt="Simon Vieille" title="Simon Vieille" />
+					<img src="/images/picture.jpg?new=1" alt="Simon Vieille" title="Simon Vieille" />
 				</div>
 				<div id="information">
 					<h2>Simon Vieille</h2>
@@ -106,7 +106,6 @@
 		<div class="row">
 			<div class="span12" id="content">
 				<div>
-					<div id="neutral_network" class="alert-message warning">
-						<img src="https://ssl.neutralnetwork.org/favicon.ico" alt="Neutral Nework" title="Neutral Nework" />
-						Découvrez le réseau IRC <strong>libre</strong> et <strong>sécurisé</strong> de Deblan et Grenadine : <a href="https://ssl.neutralnetwork.org/"> <strong>Neutral Nework</strong></a>
+					<div id="announce" class="alert-message warning">
+						Deblan supporte à présent l'<strong>IPV6</strong>. Il reste encore quelques domaines à configurer. Et vous <img src="/images/smile.png" alt=":)" title=":)" style="margin-top: -3px" /> ?
 					</div>

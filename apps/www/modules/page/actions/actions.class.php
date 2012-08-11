@@ -88,8 +88,8 @@ class pageActions extends sfActions
 				));				
 
 				$message = Swift_Message::newInstance()
-						->setFrom(array('no-replay@'.$_SERVER['SERVER_NAME']))
-						->setTo('simon.vieille@free.fr')
+						->setFrom(array('no-reply@deblan.fr'))
+						->setTo('simon@deblan.fr')
 						->setSubject($subject)
 						->setBody($mailBody, 'text/html');
 
@@ -216,8 +216,8 @@ class pageActions extends sfActions
 				$subject = "Nouveau commentaire";
 
 				$message = Swift_Message::newInstance()
-						->setFrom(array('no-replay@'.$_SERVER['SERVER_NAME']))
-						->setTo('simon.vieille@free.fr')
+						->setFrom(array('no-replay@deblan.fr'))
+						->setTo('simon@deblan.fr')
 						->setSubject($subject)
 						->setBody($mailBody, 'text/html');
 
