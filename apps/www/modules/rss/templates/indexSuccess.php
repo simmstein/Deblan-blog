@@ -1,3 +1,4 @@
+<?php use_helper('Post'); ?>
 <?php echo '<?'; ?>xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
@@ -11,7 +12,7 @@
 					<title><![CDATA[<?php echo $post->getTitle(); ?>]]></title>
 					<link>http://<?php echo $_SERVER['SERVER_NAME'], url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?></link>
 					<description><![CDATA[<?php 
-					echo html_entity_decode(parse_texte(utf8_decode($post->getContent()))); 
+					echo parse_texte(utf8_decode(html_entity_decode($post->getContent()))); 
 					?>]]></description>
 					<guid isPermaLink="false"><?php echo $post->getId(); ?></guid>
 					<pubDate><?php echo date_format(new DateTime($post->getPublishedAt()), 'r'); ?></pubDate>

@@ -15,26 +15,28 @@ class rssActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-		$this->posts = PostPeer::getLastPosts(5);
+        $this->posts = PostPeer::getLastPosts(5);
   }
 
-	public function executeCategory(sfWebRequest $request) {
-		$category = CategoryPeer::retrieveByPK($request->getParameter('id'));
+    public function executeCategory(sfWebRequest $request)
+    {
+        $category = CategoryPeer::retrieveByPK($request->getParameter('id'));
 
-		if($category) {
-			$this->posts = $category->getLastPosts(5);
-		}
+        if ($category) {
+            $this->posts = $category->getLastPosts(5);
+        }
 
-		$this->setTemplate('index');
-	}
+        $this->setTemplate('index');
+    }
 
-	public function executePost(sfWebRequest $request) {
-		$post = PostPeer::retrieveByPK($request->getParameter('id'));
+    public function executePost(sfWebRequest $request)
+    {
+        $post = PostPeer::retrieveByPK($request->getParameter('id'));
 
-		if($post) {
-			$this->posts = array($post);
-		}
+        if ($post) {
+            $this->posts = array($post);
+        }
 
-		$this->setTemplate('index');
-	}
+        $this->setTemplate('index');
+    }
 }

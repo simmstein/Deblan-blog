@@ -26,6 +26,10 @@ share_post:
   url: /share/:id/:slugy_path/:sent
   param: { module: page, action: sharePost, sent: 0 }
 
+song_post:
+  url: /song/:id/:slugy_path
+  param: { module: page, action: songPost}
+
 category:
   url: /categorie/:id/:slugy_path/:page
   param: { module: page, action: category, page: 1 }
@@ -65,3 +69,7 @@ auth:
 bot:
   url: /bot
   param: { module: page, action: bot }
+
+sitemap:
+  url: sitemap.xml
+  param: { module: sitemap, action: index }
