@@ -24,15 +24,7 @@
 
 <h3>Ajouter un commentaire</h3>
 
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(document).mousemove(function() {
-		var action = $('#comment_form').attr('action').replace(/^<?php echo str_replace('/', '\/', url_for('@bot')); ?>\?/, '');
-		$('#comment_form').attr('action', action);
-	});
-});
-</script>
+<script type="text/javascript">kick_bot('comment_form');</script>
 
 <form enctype="multipart/form-data" action="<?php echo url_for('@bot'); ?>?<?php echo $_SERVER['REQUEST_URI']; ?>#comment_form" id="comment_form" method="post">
 	<div id="answerto_info" class="alert-message info hidden">

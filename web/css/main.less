@@ -382,19 +382,15 @@ div.popover {
 			font-size:10px;
 			font-family:Verdana;
 			opacity:0;
-			-webkit-transition: all .3s ease-in;
-			-moz-transition: all .3s ease-in;
-			-o-transition: all .3s ease-in;
-			transition: all .3s ease-out;
+			-webkit-transition: opacity .3s ease-in;
+			-moz-transition: opacity .3s ease-in;
+			-o-transition: opacity .3s ease-in;
+			transition: opacity .3s ease-out;
 			background:url('../images/page_white_code.png') center right no-repeat;
 		}
 
 		&:hover {
 			max-height: inherit;
-			-webkit-transition: all .3s ease-in;
-			-moz-transition: all .3s ease-in;
-			-o-transition: all .3s ease-in;
-			transition: all .3s ease-out;
 
 			&:before {
 				display:block;
@@ -693,4 +689,12 @@ pre {
 
 #lightbox {
 	display: none;
+}
+
+#statusnet p {
+	font-size: 11px;
+	color: #666;
+
+	/*a {
+	}*/
 }

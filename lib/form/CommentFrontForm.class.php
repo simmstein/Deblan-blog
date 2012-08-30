@@ -7,7 +7,7 @@
  * @subpackage form
  * @author     Your name here
  */
-class CommentFrontForm extends CommentForm
+class CommentFrontForm extends BaseCommentForm
 {
   public function configure()
   {

@@ -25,8 +25,8 @@ class pageActions extends sfActions
         $bot->save();
     }
 
-  public function executeIndex(sfWebRequest $request)
-  {
+    public function executeIndex(sfWebRequest $request)
+    {
         if ($date = $request->getParameter('date')) {
             $date = date('Y/m/d H:i:s', $date);
             $criteria = new Criteria();
@@ -269,14 +269,14 @@ class pageActions extends sfActions
         if ($request->getParameter('slugy_path') != $post->getSlugyPath()) {
             $this->redirect('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath());
         }
-		
-		$songPost = new SongPost($post);
 
-		echo '<pre>', var_dump( $songPost->save() ), '</pre>';
-		die;
+        $songPost = new SongPost($post);
 
-		return sfView::NONE;
-	}	
+        echo '<pre>', var_dump( $songPost->save() ), '</pre>';
+        die;
+
+        return sfView::NONE;
+    }
 
     public function executeCategory(sfWebRequest $request)
     {

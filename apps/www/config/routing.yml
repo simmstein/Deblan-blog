@@ -50,6 +50,10 @@ rss_post:
   url: /RSS/p/:id
   param: { module: rss, action: post }
 
+statusnet:
+  url: /statusnet
+  param: { module: statusnet, action: index }
+
 search:
   url: /chercher
   param: { module: page, action: search }

@@ -137,6 +137,16 @@ var set_categories_more = function() {
 	}
 }
 
+var kick_bot = function(id, url) {
+	$(document).ready(function() {
+		$(document).one('mousemove', function() {
+			var $form = $('#'+id);
+			var action = $form.attr('action').replace(/^\/bot\?/, '');
+			$form.attr('action', action);
+		});
+	});
+}
+
 var set_comment_answerto_events = function() {
 	if($('.answerto')) {
 		$('#answerto_cancel').click(function() {

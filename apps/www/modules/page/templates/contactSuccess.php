@@ -18,14 +18,7 @@
 	<?php echo __("Les messages de publicité ou d'échanges de liens pour le référencement seront systématiquement ignorés !"); ?>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$(document).mousemove(function() {
-		var action = $('#contact_form').attr('action').replace(/^<?php echo str_replace('/', '\/', url_for('@bot')); ?>\?/, '');
-		$('#contact_form').attr('action', action);
-	});
-});
-</script>
+<script type="text/javascript">kick_bot('contact_form');</script>
 
 <form enctype="multipart/form-data" action="<?php echo url_for('@bot'); ?>?<?php echo url_for('@contact') ?>" id="contact_form" method="post">
 	<div><?php echo $form->renderHiddenFields() ?></div>

@@ -41,7 +41,7 @@ class Comment extends BaseComment {
 	}
 
 	public function getGravatar() {
-		return (empty($_SERVER['HTTPS']) ? 'http://www.' : 'https://secure.').'gravatar.com/avatar/'.md5($this->getEmail()).'.jpg?s=150&amp;d=mm';
+		return (empty($_SERVER['HTTPS']) ? 'http://www.' : 'https://secure.').'gravatar.com/avatar/'.md5($this->getEmail()).'.jpg?s=150';
 	}
 
 	public function save(PropelPDO $con = null) {

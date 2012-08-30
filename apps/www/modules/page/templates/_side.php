@@ -1,6 +1,10 @@
 	</div>
 </div>
 <div class="span4" id="sidebar">
+	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23general"><img src="/images/irc_general.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
+	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23linux"><img src="/images/irc_linux.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
+	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23HarmonyHosting"><img src="/images/irc_host.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
+
 	<div id="side-categories" class="side-block">
 		<ul>
 			<?php foreach($categories as $k => $category): ?>
@@ -17,9 +21,9 @@
 	<div class="no-padding side-block">
 		<h4><?php echo __('Vidéo à la une'); ?></h4>
 
-		<video poster="http://upload.deblan.fr/u/2012-04/4f9a8b2c.png" data-setup="{}" width="218" height="126" controls="controls"class="video-js vjs-default-skin">
-			<source src="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv" type="video/ogg" />
-			<a href="http://dedi.geneweb.fr/~simon/videos/Free%20the%20Network%20-%20Trailer.ogv">Téléchager la vidéo.</a>
+		<video poster="http://upload.deblan.fr/u/2012-08/502e2e46.png" data-setup="{}" width="218" height="174" controls="controls"class="video-js vjs-default-skin">
+			<source src="http://dedi.geneweb.fr/~simon/videos/balance_minitel.ogv" type="video/ogg" />
+			<a href="https://dedi.geneweb.fr/~simon/videos/balance_minitel.ogv">Téléchager la vidéo.</a>
 		</video>
 
 		<?php /*

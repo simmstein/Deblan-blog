@@ -7,6 +7,7 @@
 				<li><a rel="popover-below" data-original-title="<?php echo __('Serveur IRC'); ?>" data-content="<?php echo html(__("Rejoignez le serveur IRC de la communauté Deblan")); ?>" href="http://ssl.neutralnetwork.org/"><?php echo __('Discussion'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@contact'))?'active':''; ?>"><a href="<?php echo url_for('@contact'); ?>" class="hash toplink"><?php echo __('Contact'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>" class="hash toplink"><?php echo __('Minecraft'); ?></a></li>
+				<li><a href="http://help.deblan.org/don.html" class="toplink"><?php echo __('Nous aider'); ?></a></li>
 				
 
 				<?php if($sf_user->isAuthenticated()): ?>
@@ -64,12 +65,18 @@
 							</li>
 							<li>
 								<a 
+									href="http://statusnet.deblan.org/index.php/simon"
+									data-original-title="StatusNet" class="apopover" rel="popover-below" 
+									data-content="<?php echo html(__("Suivez-moi sur le service StatusNet de Deblan")); ?>" 
+								><img src="/images/top/statusnet.png" alt="StatusNet" title="StatusNet" /> <span>Simon</span></a>
+							</li>
+							<li>
+								<a 
 									href="https://twitter.com/SimonVieille"
 									data-original-title="Twitter" class="apopover" rel="popover-below" 
 									data-content="<?php echo html(__("Suivez-moi sur le service de microblogging Twitter, @SimonVieille")); ?>" 
 								><img src="/images/top/twitter.png" alt="Twitter" title="Twitter" /> <span>@SimonVieille</span></a>
 							</li>
-
 							<li>
 								<a 
 									href="https://www.facebook.com/simon.vieille"
@@ -105,7 +112,10 @@
 
 		<div class="row">
 			<div class="span12" id="content">
+				<div id="statusnet"></div>
+				<script type="text/javascript">$(function() { $('#statusnet').load('<?php echo url_for('@statusnet'); ?>?t=<?php echo time(); ?>'); });</script>
+
 				<div>
-					<div id="announce" class="alert-message warning">
+					<?php /*<div id="announce" class="alert-message warning">
 						Deblan supporte à présent l'<strong>IPV6</strong>. Il reste encore quelques domaines à configurer. Et vous <img src="/images/smile.png" alt=":)" title=":)" style="margin-top: -3px" /> ?
-					</div>
+					</div> */?>
