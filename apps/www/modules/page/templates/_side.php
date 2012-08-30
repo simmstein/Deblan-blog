@@ -1,9 +1,22 @@
 	</div>
 </div>
 <div class="span4" id="sidebar">
-	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23general"><img src="/images/irc_general.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
-	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23linux"><img src="/images/irc_linux.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
-	<p><a href="https://ssl.neutralnetwork.org/irc/?channels=%23HarmonyHosting"><img src="/images/irc_host.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté Deblan sur IRC" /></a></p>
+	<div id="irc-links">
+		<?php foreach(
+			array(
+				'title' => 'https://ssl.neutralnetwork.org/', 
+				'general' => 'https://ssl.neutralnetwork.org/irc/?channels=%23general', 
+				'linux' => 'https://ssl.neutralnetwork.org/irc/?channels=%23linux', 
+				'hebergement' => 'https://ssl.neutralnetwork.org/irc/?channels=%23HarmonyHosting', 
+				'bottom' => 'https://ssl.neutralnetwork.org/'
+			) as $img => $link):
+			echo sprintf(
+				'<a href="%s"><img src="/images/irc/%s.png" alt="Rejoins la communauté sur IRC" title="Rejoins la communauté sur IRC" /></a><br />',
+				$link, $img
+			);
+		endforeach; ?>
+	</div>
+	
 
 	<div id="side-categories" class="side-block">
 		<ul>
