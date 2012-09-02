@@ -4,11 +4,21 @@
 			<a class="brand" href="<?php echo url_for('@homepage'); ?>"><img src="http://blog.deblan.fr/favicon.ico" alt="" title="" /></a>
 			<ul class="nav">
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@homepage'))?'active':''; ?>"><a class="hash toplink" href="<?php echo url_for('@homepage'); ?>"><?php echo __('Accueil'); ?></a></li>
-				<li><a rel="popover-below" data-original-title="<?php echo __('Serveur IRC'); ?>" data-content="<?php echo html(__("Rejoignez le serveur IRC de la communauté Deblan")); ?>" href="http://ssl.neutralnetwork.org/"><?php echo __('Discussion'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@contact'))?'active':''; ?>"><a href="<?php echo url_for('@contact'); ?>" class="hash toplink"><?php echo __('Contact'); ?></a></li>
-				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>" class="hash toplink"><?php echo __('Minecraft'); ?></a></li>
+
+				<li class="dropdown <?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>" data-dropdown="dropdown" >
+					<a href="#" class="dropdown-toggle"><?php echo __('Le réseau'); ?></a>
+					<ul class="dropdown-menu">
+						<li><a href="https://ssl.neutralnetwork.org"><?php echo __('NeutralNetwork (IRC)'); ?></a></li>
+						<li><a href="https://seeks.deblan.org"><?php echo __('Métamoteur (Seeks)'); ?></a></li>
+						<li><a href="http://wall.deblan.fr/"><?php echo __('Colorisateur de code'); ?></a></li>
+						<li><a href="http://url.deblan.fr/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
+						<li><a href="http://feed.deblan.fr/"><?php echo __('Planète (RSS)'); ?></a></li>
+						<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>"><?php echo __('Minecraft'); ?></a></li>
+					</ul>
+				</li>
+
 				<li><a href="http://help.deblan.org/don.html" class="toplink"><?php echo __('Nous aider'); ?></a></li>
-				
 
 				<?php if($sf_user->isAuthenticated()): ?>
 					<li class="dropdown" data-dropdown="dropdown" >
@@ -25,6 +35,8 @@
 						</ul>
 					</li>
 				<?php endif; ?>
+
+
 			</ul>
 			<form action="<?php echo url_for('@search'); ?>" class="pull-right">
 				<input class="input-small" type="text" <?php echo !empty($query) ? 'value="'.html($query).'"' : ''; ?> name="query" placeholder="<?php echo __('Mot clé'); ?>">

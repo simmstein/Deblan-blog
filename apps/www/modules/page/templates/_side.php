@@ -1,6 +1,19 @@
 	</div>
 </div>
 <div class="span4" id="sidebar">
+	<div id="side-categories" class="side-block">
+		<ul>
+			<?php foreach($categories as $k => $category): ?>
+				<li class="<?php echo $k > 5 ? 'hidden more-categories-list' : ''; ?> <?php echo $category->getIsCurrentCategory() ? 'active' : ''; ?>">
+					<a class="hash" href="<?php echo url_for('@category?id='.$category->getId().'&slugy_path='.$category->getSlugyPath()); ?>">
+						<?php echo __($category->getName()); ?>
+					</a>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+		<p id="more-categories"><?php echo __('En afficher plus'); ?></p>
+	</div>
+	
 	<div id="irc-links">
 		<?php foreach(
 			array(
@@ -15,20 +28,6 @@
 				$link, $img
 			);
 		endforeach; ?>
-	</div>
-	
-
-	<div id="side-categories" class="side-block">
-		<ul>
-			<?php foreach($categories as $k => $category): ?>
-				<li class="<?php echo $k > 5 ? 'hidden more-categories-list' : ''; ?> <?php echo $category->getIsCurrentCategory() ? 'active' : ''; ?>">
-					<a class="hash" href="<?php echo url_for('@category?id='.$category->getId().'&slugy_path='.$category->getSlugyPath()); ?>">
-						<?php echo __($category->getName()); ?>
-					</a>
-				</li>
-			<?php endforeach; ?>
-		</ul>
-		<p id="more-categories"><?php echo __('En afficher plus'); ?></p>
 	</div>
 
 	<div class="no-padding side-block">
