@@ -5,8 +5,22 @@ function parse_commentaire($str) {
 	$str = html($str);
 	$str = str_replace('&lt;3', '<span style="color:#FF3333; font-weight:bold;">&lt;3</span>', $str);
 	$str = preg_replace('`https?://[^\s\)]+`is', '<a href="$0">$0</a>', $str);
+	$str = nl2br($str);
+
+	/*preg_match_all('`>(http://wall.deblan.fr/x[^<]*)<`iU', $str, $walls, PREG_SET_ORDER);
+
+	if(!empty($walls)) {
+		foreach($walls as $wall) {
+			$id  = mt_rand();
+			$str.= '<br /><br />';
+			$str.= htmlentities($wall[1]);
+			$str.= '<div id="u'.$id.'"></div>';
+			$str.= '<script src="http://wall.deblan.fr/js.php?uid='.$id.'&url='.htmlentities($wall[1]).'"></script>';
+		}
+	}*/
+
+	return $str;
 	//$str = iconv('ISO-8859-1', "UTF-8", $str);
-	return nl2br($str);
 }
 
 function parse_p($data) {

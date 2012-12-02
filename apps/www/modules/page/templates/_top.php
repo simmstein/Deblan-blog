@@ -11,10 +11,12 @@
 					<ul class="dropdown-menu">
 						<li><a href="https://ssl.neutralnetwork.org"><?php echo __('NeutralNetwork (IRC)'); ?></a></li>
 						<li><a href="https://seeks.deblan.org"><?php echo __('Métamoteur (Seeks)'); ?></a></li>
-						<li><a href="http://wall.deblan.fr/"><?php echo __('Colorisateur de code'); ?></a></li>
-						<li><a href="http://url.deblan.fr/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
 						<li><a href="http://feed.deblan.fr/"><?php echo __('Planète (RSS)'); ?></a></li>
 						<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>"><?php echo __('Minecraft'); ?></a></li>
+						<li class="divider"></li>
+						<li><a href="http://wall.deblan.fr/"><?php echo __('Colorisateur de code'); ?></a></li>
+						<li><a href="http://url.deblan.fr/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
+						<li><a href="http://upload.deblan.fr/"><?php echo __('Service d\'upload'); ?></a></li>
 					</ul>
 				</li>
 

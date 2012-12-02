@@ -64,6 +64,10 @@
 		href="<?php echo url_for('@post?id='.$post->getId().'&slugy_path='.$post->getSlugyPath()); ?>#comments"><?php echo $post->getCountComments(); ?></a></p>
 	</div>
 
+	<?php if($post->getIsOld()): ?>
+		<p class="outdated"><span class="label warning">Info</span> <?php echo __("Cet article a été posté il y a plus de 3 mois. Il est suceptible de contenir des informations <em>outdated</em>."); ?></p>
+	<?php endif; ?>
+
 	<div class="article-body">
 		<?php echo parse_texte(utf8_decode($post->getContent())); ?>	
 	</div>

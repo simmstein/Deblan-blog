@@ -56,7 +56,7 @@ class pageActions extends sfActions
             $this->forward404();
         }
 
-        sfContext::getInstance()->getResponse()->addMeta('title', self::title_prefix.'Accueil');
+        sfContext::getInstance()->getResponse()->addMeta('title', self::title_prefix.'Libriste, Hacktiviste, Développeur → Simon Vieille');
 
         $this->current_page = $request->getParameter('page', 1);
         $this->next_page = $pager->getNextPage();

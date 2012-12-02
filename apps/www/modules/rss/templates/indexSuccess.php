@@ -2,9 +2,9 @@
 <?php echo '<?'; ?>xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
-		<title><?php echo __('Blog Deblan'); ?></title>
+		<title><?php echo __('Deblan - Blog'); ?></title>
 		<link>http://www.deblan.tv/</link>
-		<description><?php echo __('Blog Deblan'); ?></description>
+		<description><?php echo __('Deblan - Blog'); ?></description>
 		<language>fr</language>
 		<?php if(!empty($posts)): ?>
 			<?php foreach($posts as $post): ?>

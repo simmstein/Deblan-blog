@@ -5,6 +5,7 @@
     <?php include_metas() ?>
     <?php include_title() ?>
     <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="<?php echo __('Deblan - Blog'); ?>" href="http://<?php echo $_SERVER['SERVER_NAME'], url_for('@rss'); ?>" />	
     <?php include_stylesheets() ?>
 		<link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css" />
 		<?php include_javascripts(); ?>
@@ -20,6 +21,7 @@
 		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
 		<script src="http://vjs.zencdn.net/c/video.js"></script>		
     <?php //include_compressed_javascripts() ?>
+	<script type="text/javascript" src="http://as.blogbang.com/script?key=9eb6375c2f&new"></script>
   </body>
 </html>
 <?php 
@@ -42,4 +44,5 @@ foreach($lines as $k => $l) {
 
 echo implode("\n", $lines);
 */
+
 

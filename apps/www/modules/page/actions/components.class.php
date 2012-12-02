@@ -43,4 +43,9 @@ class pageComponents extends sfComponents
 
         $this->posts = $posts;
     }
+
+	public function executeArchive(sfWebRequest $request)
+	{
+	
+	}
 }

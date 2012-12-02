@@ -17,37 +17,35 @@
  */
 class sfGuardUser extends PluginsfGuardUser
 {
-	public function hasPermission($names, $validall=false)
-	{
-		if(empty($names)) {
-			return true;
-		}
+    public function hasPermission($names, $validall=false)
+    {
+        if (empty($names)) {
+            return true;
+        }
 
-		if (!$this->allPermissions)
-		{
-			$this->getAllPermissions();
-		}
+        if (!$this->allPermissions) {
+            $this->getAllPermissions();
+        }
 
-		if(!is_array($names)) {
-			$names = array($names);
-		}
+        if (!is_array($names)) {
+            $names = array($names);
+        }
 
-		$valid = false;
-		$validall_check = true;
+        $valid = false;
+        $validall_check = true;
 
-		foreach($names as $p) {
-			if(isset($this->allPermissions[$p])) {
-				$valid = true;
-			}
-			else {
-				$validall_check = false;
-			}
-		}
-		
-		if($validall) {
-			return $valid && $validall_check;
-		}
-			
-		return $valid;
-	}
+        foreach ($names as $p) {
+            if (isset($this->allPermissions[$p])) {
+                $valid = true;
+            } else {
+                $validall_check = false;
+            }
+        }
+
+        if ($validall) {
+            return $valid && $validall_check;
+        }
+
+        return $valid;
+    }
 }

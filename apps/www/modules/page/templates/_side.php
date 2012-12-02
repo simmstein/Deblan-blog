@@ -126,5 +126,5 @@
 			behavior: 'all'
 		}
 	}).render().setUser('SimonVieille').start();
-	</script>	
+	</script>
 </div>
