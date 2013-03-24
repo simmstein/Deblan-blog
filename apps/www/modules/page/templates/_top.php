@@ -1,7 +1,7 @@
 <div class="topbar">
 	<div class="fill">
 		<div class="container">
-			<a class="brand" href="<?php echo url_for('@homepage'); ?>"><img src="http://blog.deblan.fr/favicon.ico" alt="" title="" /></a>
+			<a class="brand" href="<?php echo url_for('@homepage'); ?>"><img src="/favicon.ico" alt="" title="" /></a>
 			<ul class="nav">
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@homepage'))?'active':''; ?>"><a class="hash toplink" href="<?php echo url_for('@homepage'); ?>"><?php echo __('Accueil'); ?></a></li>
 				<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@contact'))?'active':''; ?>"><a href="<?php echo url_for('@contact'); ?>" class="hash toplink"><?php echo __('Contact'); ?></a></li>
@@ -14,13 +14,14 @@
 						<li><a href="http://feed.deblan.fr/"><?php echo __('Planète (RSS)'); ?></a></li>
 						<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>"><?php echo __('Minecraft'); ?></a></li>
 						<li class="divider"></li>
-						<li><a href="http://wall.deblan.fr/"><?php echo __('Colorisateur de code'); ?></a></li>
-						<li><a href="http://url.deblan.fr/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
-						<li><a href="http://upload.deblan.fr/"><?php echo __('Service d\'upload'); ?></a></li>
+						<li><a href="https://wall.deblan.org/"><?php echo __('Colorisateur de code'); ?></a></li>
+						<li><a href="https://url.deblan.org/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
+						<li><a href="https://up.deblan.org/"><?php echo __('Service d\'upload'); ?></a></li>
+						<li><a href="https://cdn.deblan.org/"><?php echo __('CDN javascript'); ?></a></li>
 					</ul>
 				</li>
 
-				<li><a href="http://help.deblan.org/don.html" class="toplink"><?php echo __('Nous aider'); ?></a></li>
+				<li><a href="https://help.deblan.org/don.html" class="toplink"><?php echo __('Nous aider'); ?></a></li>
 
 				<?php if($sf_user->isAuthenticated()): ?>
 					<li class="dropdown" data-dropdown="dropdown" >
@@ -37,8 +38,6 @@
 						</ul>
 					</li>
 				<?php endif; ?>
-
-
 			</ul>
 			<form action="<?php echo url_for('@search'); ?>" class="pull-right">
 				<input class="input-small" type="text" <?php echo !empty($query) ? 'value="'.html($query).'"' : ''; ?> name="query" placeholder="<?php echo __('Mot clé'); ?>">
@@ -79,7 +78,7 @@
 							</li>
 							<li>
 								<a 
-									href="http://statusnet.deblan.org/index.php/simon"
+									href="https://statusnet.deblan.org/"
 									data-original-title="StatusNet" class="apopover" rel="popover-below" 
 									data-content="<?php echo html(__("Suivez-moi sur le service StatusNet de Deblan")); ?>" 
 								><img src="/images/top/statusnet.png" alt="StatusNet" title="StatusNet" /> <span>Simon</span></a>

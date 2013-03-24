@@ -1,4 +1,4 @@
-html,body{background:url(../images/body.gif) fixed;}
+html,body{background:url("http://kim.deblan.fr/~simon/images/wallpaper-743056.jpg") fixed bottom center repeat-x;}
 body{padding-top:40px;}
 #bg-link-container>a{display:block;position:fixed;height:300px;width:234px;top:0;margin-left:-255px;}
 *{outline:none;}

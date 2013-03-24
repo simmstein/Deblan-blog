@@ -31,13 +31,15 @@
 	</div>
 
 	<div class="no-padding side-block">
-		<h4><?php echo __('Vidéo à la une'); ?></h4>
+		<!-- <h4><?php echo __('Vidéo à la une'); ?></h4> -->
+		<h4><?php echo __('Mauvaise idée'); ?></h4>
 
-		<video poster="http://upload.deblan.fr/u/2012-08/502e2e46.png" data-setup="{}" width="218" height="174" controls="controls"class="video-js vjs-default-skin">
+		<!-- <video poster="http://upload.deblan.fr/u/2012-08/502e2e46.png" data-setup="{}" width="218" height="174" controls="controls"class="video-js vjs-default-skin">
 			<source src="http://dedi.geneweb.fr/~simon/videos/balance_minitel.ogv" type="video/ogg" />
 			<a href="https://dedi.geneweb.fr/~simon/videos/balance_minitel.ogv">Téléchager la vidéo.</a>
-		</video>
+		</video> -->
 
+		<object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71959674&amp;show_comments=true&amp;auto_play=false&amp;color=0b426c"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71959674&amp;show_comments=true&amp;auto_play=false&amp;color=0b426c" type="application/x-shockwave-flash" width="100%"></embed> </object>
 		<?php /*
 		<div id="lecteur_27111"></div>	
 		<script type="text/javascript" src="http://www.supportduweb.com/page/js/flashobject.js"></script>

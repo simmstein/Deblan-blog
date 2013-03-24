@@ -19,4 +19,8 @@ Options +FollowSymLinks +ExecCGI
 
   # no, so we redirect to our front web controller
   RewriteRule ^(.*)$ index.php [QSA,L]
+
+  #RewriteCond %{SERVER_PORT} 80 
+  #RewriteCond %{HTTP_HOST} ^www.deblan.tv
+  #RewriteRule ^(.*)$ https://www.deblan.tv/$1 [R,L]
 </IfModule>
