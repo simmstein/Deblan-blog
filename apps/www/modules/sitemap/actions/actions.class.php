@@ -52,11 +52,11 @@ class sitemapActions extends sfActions
 	$c = new Criteria();
 	$c->addAnd(CategoryPeer::IS_ACTIVE, true);
 
-	$categories = PostPeer::doSelect($c);
+	$categories = CategoryPeer::doSelect($c);
 
 	foreach($categories as $k => $category) {
 		$this->pages[] = array(
-			'loc' => $http.$this->getContext()->getController()->genUrl('@category?id='.$category->getId().'&slugy_path='.$post->getSlugyPath()),
+			'loc' => $http.$this->getContext()->getController()->genUrl('@category?id='.$category->getId().'&slugy_path='.$category->getSlugyPath()),
 			'changefreq' => 'weekly'
 		);
 	}

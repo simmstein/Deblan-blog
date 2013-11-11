@@ -11,13 +11,16 @@
 					<ul class="dropdown-menu">
 						<li><a href="https://ssl.neutralnetwork.org"><?php echo __('NeutralNetwork (IRC)'); ?></a></li>
 						<li><a href="https://seeks.deblan.org"><?php echo __('Métamoteur (Seeks)'); ?></a></li>
-						<li><a href="http://feed.deblan.fr/"><?php echo __('Planète (RSS)'); ?></a></li>
-						<li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>"><?php echo __('Minecraft'); ?></a></li>
+						<!-- <li><a href="http://feed.deblan.fr/"><?php echo __('Planète (RSS)'); ?></a></li> -->
+						<!-- <li class="<?php echo ($_SERVER['REQUEST_URI'] == url_for('@minecraft'))?'active':''; ?>"><a href="<?php echo url_for('@minecraft'); ?>"><?php echo __('Minecraft'); ?></a></li> -->
 						<li class="divider"></li>
 						<li><a href="https://wall.deblan.org/"><?php echo __('Colorisateur de code'); ?></a></li>
-						<li><a href="https://url.deblan.org/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
-						<li><a href="https://up.deblan.org/"><?php echo __('Service d\'upload'); ?></a></li>
+						<!-- <li><a href="https://url.deblan.org/"><?php echo __('Raccourcisseur d\'URL'); ?></a></li>
+						<li><a href="https://up.deblan.org/"><?php echo __('Service d\'upload'); ?></a></li> -->
 						<li><a href="https://cdn.deblan.org/"><?php echo __('CDN javascript'); ?></a></li>
+						<li class="divider"></li>
+						<li><a href="https://git.deblan.org/"><?php echo __('Dépots GIT publics'); ?></a></li>
+						<li><a href="https://guest:guest@svn.deblan.org/websvn/"><?php echo __('Dépots SVN publics'); ?></a></li>
 					</ul>
 				</li>
 
